@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #eee;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0px;
+      background-color: #fff;
+    }
+
+    table,
+    th,
+    td {
+      padding: 5px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="selectForm">
+    <div id="regionCheckbox">
+      <label>
+        <input type="checkbox" name="regionSelect" value="华东" checked>
+        华东
+      </label>
+      <label>
+        <input type="checkbox" name="regionSelect" value="华南">
+        华南
+      </label>
+      <label>
+        <input type="checkbox" name="regionSelect" value="华北">
+        华北
+      </label>
+    </div>
+    <label>
+      <input type="checkbox" value="全选" name="regionSelect" id="regionAllSelect">
+      全选
+    </label>
+    <div id="productCheckbox">
+      <label>
+        <input type="checkbox" name="productSelect" value="手机">
+        手机
+      </label>
+      <label>
+        <input type="checkbox" name="productSelect" value="笔记本">
+        笔记本
+      </label>
+      <label>
+        <input type="checkbox" name="productSelect" value="智能音箱">
+        智能音箱
+      </label>
+    </div>
+    <label>
+      <input type="checkbox" value="全选" name="productSelect" id="productAllSelect">
+      全选
+    </label>
+  </form>
+  <table id="tableWrapper">
+    <thead>
+      <tr>
+        <!-- TODO 地区和商品的显示顺序变化 -->
+        <td>地区</td>
+        <td>商品</td>
+        <td>1月</td>
+        <td>2月</td>
+        <td>3月</td>
+        <td>4月</td>
+        <td>5月</td>
+        <td>6月</td>
+        <td>7月</td>
+        <td>8月</td>
+        <td>9月</td>
+        <td>10月</td>
+        <td>11月</td>
+        <td>12月</td>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="../ife31data.js"></script>
+  <script src="./lesson-4-app.js"></script>
+  <script src="./lesson-4-checkbox.js"></script>
+  <script src="./lesson-4-table.js"></script>
+  <script src="lesson-4.js"></script>
+</body>
+
+</html>
